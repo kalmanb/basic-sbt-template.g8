@@ -1,8 +1,8 @@
 import sbt._
 import Keys._
 
-object PatientNotes extends Build {
-  val projectName = "project-name"
+object $name$ extends Build {
+  val projectName = "$name$"
 
   override lazy val settings = super.settings ++ Seq(resolvers := Seq())
 
