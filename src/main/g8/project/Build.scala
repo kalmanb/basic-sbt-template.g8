@@ -37,7 +37,7 @@ object $name$ extends Build {
     //libraryDependencies in config("macro") <+= scalaVersion("org.scala-lang" % "scala-compiler" % _),
     resolvers ++= Seq(
       Resolver.sonatypeRepo("snapshots"),
-      "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
+      "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
  //     "spray repo" at "http://repo.spray.io",
  //     "spray repo nightlies" at "http://nightlies.spray.io"
      ),
