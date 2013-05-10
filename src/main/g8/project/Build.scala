@@ -6,12 +6,7 @@ object $name$ extends Build {
 
   override lazy val settings = super.settings ++ Seq(resolvers := Seq())
 
-  // TODO - install the following:
-  // https://github.com/softprops/less-sbt
-  // https://github.com/softprops/coffeescripted-sbt
-  // https://github.com/untyped/sbt-plugins/tree/master/sbt-js
-
-  val akkaVersion = "2.1.0"
+  val akkaVersion = "2.2-M3"
 //  val sprayVersion = "1.1-20130110"
 
   val scalaReflect = "org.scala-lang" % "scala-reflect" % "2.10.0"
@@ -23,15 +18,14 @@ object $name$ extends Build {
 //  val sprayCaching = "io.spray" % "spray-caching" % sprayVersion
 //  val sprayTestKit = "io.spray" % "spray-testkit" % sprayVersion
 //
-//  val slick = "com.typesafe" %% "slick" % "1.0.0-RC1"
 
-  val slf4j = "org.slf4j" % "slf4j-api" % "1.7.2"
-  val scalaTest = "org.scalatest" %% "scalatest" % "2.0.M5b" % "test"
+  val slf4j = "org.slf4j" % "slf4j-api" % "1.7.5"
+  val scalaTest = "org.scalatest" %% "scalatest" % "2.0.M6-SNAP16" % "test"
   val junit = "junit" % "junit" % "4.11" % "test"
   val mockito = "org.mockito" % "mockito-all" % "1.9.5" % "test"
 
   val publishedScalaSettings = Seq(
-    scalaVersion := "2.10.0",
+    scalaVersion := "2.10.1",
     //scalaBinaryVersion <<= scalaVersion,
     //libraryDependencies <+= scalaVersion("org.scala-lang" % "scala-compiler" % _),
     //libraryDependencies in config("macro") <+= scalaVersion("org.scala-lang" % "scala-compiler" % _),
@@ -43,7 +37,7 @@ object $name$ extends Build {
      ),
 
     libraryDependencies ++= Seq(
-      scalaReflect,
+      //scalaReflect,
 //      akkaActor,
 //      akkaSlf4j,
 //      akkaTestKit,
@@ -59,7 +53,7 @@ object $name$ extends Build {
       junit,
       mockito))
 
-  lazy val root = Project(id = projectName,
+  lazy val root = Project(id = $name$,
     base = file("."),
     settings = Project.defaultSettings ++ publishedScalaSettings)
 
