@@ -53,7 +53,7 @@ object $name$ extends Build {
       junit,
       mockito))
 
-  lazy val root = Project(id = $name$,
+  lazy val root = Project(id = projectName,
     base = file("."),
     settings = Project.defaultSettings ++ publishedScalaSettings)
 
