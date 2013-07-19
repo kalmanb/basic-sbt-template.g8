@@ -8,7 +8,6 @@ import org.scalatest.mock.MockitoSugar
 
 trait TestSpec extends FunSpec
   with ShouldMatchers
-  with MovioMatchers
   with MockitoSugar
   with MockitoWrapper
   with BeforeAndAfter

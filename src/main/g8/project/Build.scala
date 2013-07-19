@@ -30,10 +30,9 @@ object $name$ extends Build {
       //slf4j,
       //akkaActor,
       //akkaSlf4j,
-      //akkaTestKit,
 
       // Testing Libs
-      sprayTestKit,
+      //akkaTestKit,
       scalaTest,
       junit,
       mockito))
