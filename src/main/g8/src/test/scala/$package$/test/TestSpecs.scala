@@ -6,7 +6,7 @@ import org.scalatest._
 import org.scalatest.matchers._
 import org.scalatest.mock.MockitoSugar
 
-trait TestSpec extends FunSpec
+abstract class TestSpec extends FunSpec
   with ShouldMatchers
   with MockitoSugar
   with MockitoWrapper
