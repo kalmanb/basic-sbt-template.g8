@@ -1,6 +1,6 @@
-package kalmanb.akka
+package $package$
   
-import kalmanb.akka.test.TestSpec
+import $package$.test.TestSpec
 import org.mockito.Matchers._
        
 class FirstTest extends TestSpec {
