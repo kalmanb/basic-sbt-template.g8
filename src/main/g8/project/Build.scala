@@ -2,7 +2,7 @@ import sbt._
 import Keys._
 
 object $name;format="Camel"$ extends Build {
-  val projectName = "$name;format="lower"$"
+  val projectName = "$name;format="norm"$"
 
   override lazy val settings = super.settings ++ Seq(resolvers := Seq())
 
