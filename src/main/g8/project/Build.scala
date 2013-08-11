@@ -42,5 +42,9 @@ object $name;format="Camel"$ extends Build {
     base = file("."),
     settings = Project.defaultSettings ++ publishedScalaSettings)
 
+  override lazy val settings = super.settings :+ {
+    shellPrompt := { s => Project.extract(s).currentProject.id + " > " }
+  }}}
+
 }
 
