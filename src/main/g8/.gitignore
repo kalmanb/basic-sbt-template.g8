@@ -9,3 +9,5 @@ export.xml
 .project
 .classpath
 .settings
+ctags
+.lib-src
