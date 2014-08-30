@@ -1,7 +1,6 @@
 package $package$
   
-import $package$.test.TestSpec
-import org.mockito.Matchers._
+import com.kalmanb.test.TestSpec
        
 class FirstTest extends TestSpec {
 
