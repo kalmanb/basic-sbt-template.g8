@@ -2,9 +2,9 @@ organization := "$package$"
 
 name := "$name;format="norm"$"
 
-scalaVersion := "2.11.2"
+scalaVersion := "2.11.4"
 
-val AkkaVersion = "2.3.4"
+val AkkaVersion = "2.3.8"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % AkkaVersion,
