@@ -2,14 +2,14 @@ organization := "$package$"
 
 name := "$name;format="norm"$"
 
-scalaVersion := "2.11.4"
+scalaVersion := "2.11.6"
 
-val AkkaVersion = "2.3.8"
+val AkkaVersion = "2.3.9"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-actor" % AkkaVersion,
-  "org.scalaz" %% "scalaz-core" % "7.1.0",
-  "com.chuusai" %% "shapeless" % "2.0.0"
+  "org.scalaz" %% "scalaz-core" % "7.1.1",
+  "com.chuusai" %% "shapeless" % "2.1.0"
 )
 // Other libs that maybe useful
 //val SprayVersion = "1.3.1"
